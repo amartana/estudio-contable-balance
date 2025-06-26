@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Contable Balance</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./lo.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Aca poner un icono para que despliegue un menu en mobile -->
+            <ul class="main-nav">
+                <li class="main-nav__item"> <a href="#who"> Sobre nosotros </a> </li>
+                <li class="main-nav__item"> <a href="#services"> Servicios </a> </li>
+                <li class="main-nav__item"> <a href="#contact"> Contacto </a> </li>
+                <li class="main-nav__item"> <a href="#links"> Links de interes </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="portada" class="portada">
+            <div class="portada__img-contenedor">
+                <img src="./portada.jpg" alt="portada" class="portada__img">
+                <div class="cobertor"></div>
+            </div>
+
+            <div id="portada__pie" class="portada__pie">
+                <h1>Más de treinta años de experiencia en el ejercicio de la profesión</h1>
+            </div>
+
+        </section>
+        <section id="who" class="who">
+            <h1 class="who__title"> Sobre nosotros</h1>
+            <p class="who__parrafo">Somos un estudio familar, ubicado en el partido de Lanús. <br>Llevamos más de 30
+                años en el ejercicio de la profesión en Zona Sur y CABA.<br> Hoy los sistemas de comunicación y el
+                avance tecnológico nos permiten trabajar a distancia, pudiendo ofrecer nuestra asistencia en todo el
+                ámbito de la provincia de Bs. As. Brindamos asesoramiento integral y adaptamos nuestro servicio a la
+                necesidad y requerimiento de cada cliente, manteniendo siempre un asesoramiento profesional directo y
+                personalizado. Esperamos su consulta, podemos ayudarlos a optimizar los rendimientos de su negocio, para
+                alcanzar su máximo potencial.</p>
+        </section>
+        <section id="services" class="services">
+            <h2 class="services__title">Nuestros servicios</h2>
+            <div class="services__types">
+                <div class="services__type">
+                    <h3>IMPOSITIVOS</h3>
+                    <ul>
+                        <li>Monotributo</li>
+                        <li>Inscripciones, modificaciones y bajas en todos los impuestos</li>
+                        <li>Ingresos Brutos (ARBA, AGIP, Convenio Multilateral)</li>
+                        <li>Declaraciones juradas de IVA, Ganancias, Bienes Personales, Impuesto Cedular</li>
+                        <li>Declaraciones juradas de impuestos provinciales y municipales</li>
+                        <li>Planes de Pago (AFIP, ARBA, AGIP, Municipios)</li>
+                        <li>Atención de inspecciones y requerimientos</li>
+                        <li>Asistencia en embargos</li>
+                        <li>Certificaciones de ingresos</li>
+                        <li>Exenciones impositivas</li>
+                        <li>Certificados de no retención y retenciones del Impuesto a las Ganancias</li>
+                        <li>Regímenes de información</li>
+                    </ul>
+                </div>
+                <div class="services__type">
+                    <h3>LABORAL Y PREVISIONAL</h3>
+                    <ul>
+                        <li>Altas, modificaciones y bajas de empleados (AFIP y sindicatos)</li>
+                        <li>Liquidación de sueldos (todos los convenios)</li>
+                        <li>Liquidación de cargas sociales y sindicales</li>
+                        <li>Rúbrica de libros de sueldos y jornales u hojas móviles</li>
+                        <li>Contratación de ART y Seguro de Vida obligatorio</li>
+                        <li>Atención de inspecciones y pericias laborales</li>
+                    </ul>
+                </div>
+                <div class="services__type">
+                    <h3>SOCIETARIOS</h3>
+                    <ul>
+                        <li>Constitución de sociedades (todos los tipos)</li>
+                        <li>Reorganización de sociedades y asociaciones civiles</li>
+                        <li>Mantenimiento de libros societarios</li>
+                        <li>Liquidación y disolución</li>
+                        <li>Inscripción de autoridades (Art. 60 Ley 19.550)</li>
+                        <li>Cesión de cuotas</li>
+                        <li>Cambios de domicilio</li>
+                        <li>Trámites ante IGJ y DPPJ</li>
+                        <li>Sociedades de hecho</li>
+                    </ul>
+                </div>
+                <div class="services__type">
+                    <h3>CONTABLES</h3>
+                    <ul>
+                        <li>Registraciones</li>
+                        <li>Preparación de balances</li>
+                        <li>Auditorías de estados contables y operativas</li>
+                        <li>Informes mensuales para la toma de decisiones</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contactate con nosotros </h1>
+            <form action="https://formsubmit.co/gisela.146@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="message" placeholder="Escribinos tu consulta" required></textarea>
+
+                <input type="hidden" name="_next" value="https://amartana.github.io/estudio-contable-balance/#who"">
+
+                <button type="submit" class="button-enviar">Enviar</button>
+            </form>
+
+            </form>
+        </section>
+        <section id="links" class="links"></section>
+    </main>
+
+
+</body>
+
+</html>
