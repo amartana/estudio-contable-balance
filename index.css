@@ -96,6 +96,7 @@ TEMA 3
 
 .portada {
     height: 100vh;
+    height: 100svh;
     background-color: var(--color-contraste)
 }
 
