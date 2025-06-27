@@ -1,5 +1,4 @@
 :root {
-
     --color-principal-oscuro: #0e0e3e;
     --color-principal-oscuro-transparencia: #0e0e3eeb;
     --color-principal: #18185E;
@@ -112,7 +111,7 @@ TEMA 3
     width: max-content;
     height: max-content;
     max-height: 75vh;
-    background-color: black;
+    background-color: var(--color-principal-oscuro);
     opacity: 0.4;
     margin: 25vh 25vw;
     border-color: white;
@@ -231,8 +230,8 @@ TEMA 3
 
 .who__contenido-firma-avatar {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     border-color: var(--color-vivos);
     border-width: 1px;
@@ -248,38 +247,65 @@ TEMA 3
     flex-direction: column;
     margin-left: 10px;
     justify-content: center;
+    gap: 2px;
     font-size: 12px;
     font-style: italic;
 }
 
 .services {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    /* padding: 40px; */
+    color: var(--color-principal);
 }
 
 /* --------------------------------------------- */
 
 .services__guarda {
-    display: inline-block;
-    width: 100%;
-    background-color: var(--color-vivos);
-    height: 31px;
-    align-content: center;
-    margin-bottom: 25px;
+    position: relative;
+    display: block;
+    /* width: 100%; */
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
-.services__guarda p {
-    color: var(--color-principal);
+.services__guarda_izquierda,
+.services__guarda_derecha {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 70%;
+}
+
+.services__guarda_izquierda {
+    left: 0;
+    top: -23px;
+    background: linear-gradient(135deg, var(--color-principal) 90%, white 90%);
+}
+
+.services__guarda_derecha {
+    right: 0;
+    bottom: -23px;
+    background: linear-gradient(135deg, white 10%, var(--color-principal) 10%);
+}
+
+.services__guarda_texto {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(90deg, white, var(--color-vivos) 15%, var(--color-vivos) 85%, white);
+    height: 36px;
+    align-content: center;
+}
+
+.services__guarda_texto p {
     text-align: center;
     font-size: 19px;
     font-weight: 400;
 }
 
+/* ------------------------------------------- */
 .services_carrousel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 35px;
 }
 
 .services_carrousel-tarjeta {
@@ -327,42 +353,64 @@ TEMA 3
 /* ---------------------------------------------------- */
 
 .services__types {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.services__type {
-    background-color: #383b3e7a;
-    /* opacity: 0.5; */
-    padding: 0 30px;
-    margin: 15px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px
-}
-
-
-.services__title {
-    font-size: 44px;
+    position: relative;
     text-align: center;
-    margin-bottom: 40px;
+    top: -20px;
+    margin: auto;
+    width: 90vw;
+    padding: 4px;
+    /* border-color: #cecccc;
+    border-style: solid;
+    border-width: 0.5px; */
+    box-shadow: 2px 2px 2px 2px #f5efef;
+
 }
 
-.services h3 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 20px 0px;
-    background-color: black;
-    padding: 5px 10px;
+.services__types-title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 900;
+    cursor: pointer;
 }
 
-.services li {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 5px 0;
+.services__type-title {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-principal-oscuro);
+    color: white;
+    height: 25px;
+    align-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0px 5px 0px white;
+    letter-spacing: 3px;
 }
+
+.services__types-close {
+    text-align: right;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    padding: 5px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #f5efef;
+}
+
+.services__type-unorderlist {
+    list-style: none;
+    font-size: 14px;
+
+}
+
+.services__type-unorderlist li {
+    line-height: 1.25;
+    margin: 7px 0px;
+}
+
+
 
 .services ul li:last-child {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
 .contact {
@@ -371,12 +419,18 @@ TEMA 3
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(#ffffff40, #ffffff40), url(./2.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .contact h1 {
     margin: 30px 10px;
     font-size: 28px;
     text-align: center;
+    color: var(--color-principal-oscuro);
+
 }
 
 .contact-form {
@@ -392,9 +446,9 @@ TEMA 3
 
     background-color: white;
     border-width: 0px;
-    border-color: black;
+    border-color: var(--color-principal-oscuro);
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 2px 2px 2px var(--color-principal-oscuro);
     padding: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -418,7 +472,7 @@ TEMA 3
     border-width: 1px;
     border-radius: 10px;
     color: beige;
-    background-color: black;
+    background-color: var(--color-principal-oscuro);
 }
 
 @media (min-width: 640px) {
@@ -459,6 +513,10 @@ TEMA 3
     }
 
 
+    .services__types {
+        width: 70vw;
+
+    }
 
 }
 
@@ -469,7 +527,11 @@ TEMA 3
         margin: 0 auto;
     }
 
+    body {
+        background-color: white;
+    }
+
     html {
-        background-color: #ffffff;
+        background-color: var(--color-principal-oscuro);
     }
 }
