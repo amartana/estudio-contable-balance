@@ -102,6 +102,7 @@ TEMA 3
 
 .portada__img-contenedor {
     height: 75vh;
+    height: 75svh;
     overflow: hidden;
     display: grid;
     place-items: center;
@@ -112,9 +113,11 @@ TEMA 3
     width: max-content;
     height: max-content;
     max-height: 75vh;
+    max-height: 75svh;
     background-color: var(--color-principal-oscuro);
     opacity: 0.4;
     margin: 25vh 25vw;
+    margin: 25svh 25vw;
     border-color: white;
     border-style: solid;
     border-width: 1px;
