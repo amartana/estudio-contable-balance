@@ -4,6 +4,8 @@ const mainNav  = document.getElementById('main-nav')
 const moreServices  = document.getElementById('services__types-title')
 const allServices  = document.getElementById('services__types')
 const closeMoreServices = document.getElementById('services__types-close')
+const moreServicesFlecha = document.getElementById('services__types-title-flecha')
+
 
 
 const toggleMenu = () => {
@@ -12,7 +14,17 @@ const toggleMenu = () => {
 }
 
 const toggleAllServices = () => {
-    allServices.classList.toggle('inactive')
+    if(allServices.classList.contains('inactive')) {
+       allServices.classList.toggle('inactive')
+    moreServicesFlecha.style.transform = 'rotateX(180deg) translate(0px, -2px)' 
+    allServices.style.boxShadow = ('2px 2px 2px 2px #f5efef')
+    } else {
+        allServices.classList.toggle('inactive')
+moreServicesFlecha.style.transform = 'rotate(0deg)'
+    allServices.style.boxShadow = ('none')
+    }
+     
+    
 }
 
 
