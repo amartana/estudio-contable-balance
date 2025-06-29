@@ -21,17 +21,17 @@ const linkWaBasic = () => {
 
 
 const toggleMenu = () => {
-    mainNav.classList.toggle('inactive')
-    mainClose.classList.toggle('inactive')
+    mainNav.classList.toggle('inactive-main')
+    mainClose.classList.toggle('inactive-main')
 }
 
 const toggleAllServices = () => {
-    if (allServices.classList.contains('inactive')) {
-        allServices.classList.toggle('inactive')
+    if (allServices.classList.contains('inactive-services')) {
+        allServices.classList.toggle('inactive-services')
         moreServicesFlecha.style.transform = 'rotateX(180deg) translate(0px, -2px)'
         allServices.style.boxShadow = ('2px 2px 2px 2px #f5efef')
     } else {
-        allServices.classList.toggle('inactive')
+        allServices.classList.toggle('inactive-services')
         moreServicesFlecha.style.transform = 'rotate(0deg)'
         allServices.style.boxShadow = ('none')
     }

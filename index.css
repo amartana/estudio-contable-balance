@@ -507,7 +507,7 @@ TEMA 3
 .logo-whatsapp img {
     position: absolute;
     width: 100%;
-    filter: drop-shadow(1px 1px 1px white);
+    filter: drop-shadow(1px 1px 2px #234974);
     background: radial-gradient(white 50%, transparent 50%);
 }
 
@@ -560,11 +560,14 @@ TEMA 3
     margin: 4px 4px;
 }
 
-.inactive {
+.inactive-main {
     overflow: hidden;
     max-height: 0px;
     max-width: 0px;
     opacity: 0;
+}
+.inactive-services{
+    display: none;
 }
 
 
@@ -584,7 +587,7 @@ TEMA 3
         width: 60vw;
     }
 
-    .main-nav.inactive {
+    .main-nav.inactive-main {
         max-width: 3000px;
         max-height: 1000px;
         opacity: 1;
