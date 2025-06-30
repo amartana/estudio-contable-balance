@@ -407,6 +407,7 @@ TEMA 3
     font-size: 12px;
     cursor: pointer;
     background-color: #f5efef;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .services__type-unorderlist {
@@ -570,6 +571,7 @@ TEMA 3
 .conct-link:focus{
     text-decoration: none;
     color: var(--color-contraste);
+-webkit-tap-highlight-color: transparent;
 }
 .icono-contacto-footer{
     width: 16px;
