@@ -4,7 +4,7 @@
     --color-principal: #18185E;
     --color-secundario: #3D81FE;
     --color-suave: #8CA7FF;
-    --color-contraste: #E5EBF7;
+    --color-contraste: #E5EBF7; 
     --color-vivos: #FF8793;
 }
 
@@ -161,7 +161,7 @@ TEMA 3
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: left;
 }
 
 .portada__pie {
@@ -558,6 +558,19 @@ TEMA 3
 .footer-logo-redes {
     width: 20px;
     margin: 4px 4px;
+}
+
+.footer-li.redes-link, .footer-li.redes-link:visited, .footer-li.redes-link:focus{
+    text-decoration: none;
+    color: var(--color-contraste);
+}
+.icono-contacto-footer{
+    width: 16px;
+    margin: 6px 3px;
+}
+.footer_contacto{
+    display: flex;
+    align-items: center;
 }
 
 .inactive-main {
