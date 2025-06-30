@@ -12,6 +12,8 @@ const imagenes = {
     iconosPagina: {
         logoDocument: 'https://iili.io/FRtdL57.png',
         wa: 'https://iili.io/FRt2FmF.md.png',
+        mail: 'https://iili.io/F7nGyyQ.png',
+        waOficial: 'https://iili.io/F7nGp8x.png'
     },
     avatar: 'https://iili.io/FRDeJgS.png',
     fondoContacto: 'https://iili.io/FRtbp7n.md.jpg'
