@@ -7,8 +7,7 @@ const closeMoreServices = document.getElementById('services__types-close')
 const moreServicesFlecha = document.getElementById('services__types-title-flecha')
 const linkWa = document.getElementById('link-whatsapp')
 const msjsWa = {
-    basic: '¡Hola! Quisiera más información sobre sus servicios.', 
-    nuevo: '¡Hola!​ Quiero asesorarme para darme de alta como nuevo contribuyente.'
+    basic: '¡Hola! Quisiera más información sobre sus servicios.'
 }
 
 

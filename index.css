@@ -4,7 +4,7 @@
     --color-principal: #18185E;
     --color-secundario: #3D81FE;
     --color-suave: #8CA7FF;
-    --color-contraste: #E5EBF7; 
+    --color-contraste: #E5EBF7;
     --color-vivos: #FF8793;
 }
 
@@ -33,6 +33,7 @@ TEMA 3
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 
 
 .navbar {
@@ -363,8 +364,10 @@ TEMA 3
     text-align: center;
     top: -20px;
     margin: auto;
-    width: 90vw;
-    padding: 4px;
+    width: 90%;
+    max-height: 1500px;
+    opacity: 1;
+    transition: max-height 0.5s, opacity 0.4s;
     /* border-color: #cecccc;
     border-style: solid;
     border-width: 0.5px; */
@@ -373,12 +376,26 @@ TEMA 3
 }
 
 .services__types-title {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
     margin-bottom: 35px;
+    padding: 5px 15px;
     font-weight: 900;
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    border: var(--color-contraste);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.services__types-title:hover {
+    background-color: var(--color-contraste);
+    border-style: inset;
 }
 
 .services__types-title-flecha {
@@ -407,7 +424,12 @@ TEMA 3
     font-size: 12px;
     cursor: pointer;
     background-color: #f5efef;
+    user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+.services__types-close:hover {
+    color: var(--color-vivos);
 }
 
 .services__type-unorderlist {
@@ -418,7 +440,7 @@ TEMA 3
 
 .services__type-unorderlist li {
     line-height: 1.25;
-    margin: 7px 0px;
+    margin: 7px 10px;
 }
 
 
@@ -426,6 +448,101 @@ TEMA 3
 .services ul li:last-child {
     margin-bottom: 24px;
 }
+
+.link-interes-guarda {
+    height: 8px;
+    width: 100%;
+    background-color: var(--color-principal-oscuro);
+    margin: 10px 0;
+}
+
+.links-interes__contenedor-tarjetas {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.links-interes__tarjeta-portada-contenedor {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.links-interes__tarjeta-portada-contenedor>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.links-interes__tarjeta {
+    min-width: 200px;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 0 10px;
+    box-shadow: 2px 2px 2px grey;
+    color: var(--color-principal);
+}
+
+.links-interes__tarjeta:hover {
+    background-color: var(--color-contraste);
+    transform: scale(1.1);
+}
+
+.links-interes__contenedor-tarjetas::-webkit-scrollbar{
+   height: 5px; /*si la barra es vertical le pongo width*/;
+   width: 5px;
+   background: transparent;  /*Es el fondo de la barra*/
+}
+
+.links-interes__contenedor-tarjetas::-webkit-scrollbar-thumb{
+  background: var(--color-vivos); /*color de la barra que movemos*/
+  border-radius: 50px;
+}
+
+
+.links-interes__link-tarjeta-descripcion {
+    text-decoration: none;
+    all: unset;
+}
+
+.links-interes__tarjeta-descripcion {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.links-interes__tarjeta-descripcion-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.links-interes__tarjeta-descripcion-text {
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+.links-interes__tarjeta-descripcion-ver {
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    user-select: none;
+    color: var(--color-vivos);
+}
+
 
 .contact {
     min-height: 75vh;
@@ -526,7 +643,8 @@ TEMA 3
     flex-direction: column;
     margin: 10px 10px;
 }
-.footer-ul-organismos{
+
+.footer-ul-organismos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -563,21 +681,23 @@ TEMA 3
     margin: 4px 4px;
 }
 
-.footer-li.redes-link, 
-.footer-li.redes-link:visited, 
-.footer-li.redes-link:focus, 
-.conct-link, 
-.conct-link:visited, 
-.conct-link:focus{
+.footer-li.redes-link,
+.footer-li.redes-link:visited,
+.footer-li.redes-link:focus,
+.conct-link,
+.conct-link:visited,
+.conct-link:focus {
     text-decoration: none;
     color: var(--color-contraste);
--webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
-.icono-contacto-footer{
+
+.icono-contacto-footer {
     width: 16px;
     margin: 6px 4px;
 }
-.footer_contacto{
+
+.footer_contacto {
     display: flex;
     align-items: center;
 }
@@ -588,8 +708,11 @@ TEMA 3
     max-width: 0px;
     opacity: 0;
 }
-.inactive-services{
-    display: none;
+
+.inactive-services {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
 }
 
 
@@ -641,7 +764,7 @@ TEMA 3
 
 
     .services__types {
-        width: 70vw;
+        width: 70%;
 
     }
 
