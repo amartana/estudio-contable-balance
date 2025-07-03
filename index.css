@@ -450,7 +450,7 @@ TEMA 3
 }
 
 .link-interes-guarda {
-    height: 8px;
+    height: 2px;
     width: 100%;
     background-color: var(--color-principal-oscuro);
     margin: 10px 0;
@@ -775,11 +775,11 @@ TEMA 3
         display: block;
         height: 5px;
         width: 5px;
-        background: transparent;
+        background: var(--color-principal-oscuro-transparencia);
     }
 
     .links-interes__contenedor-tarjetas::-webkit-scrollbar-thumb {
-        background: var(--color-vivos);
+        background: var(--color-secundario);
         border-radius: 50px;
     }
 
