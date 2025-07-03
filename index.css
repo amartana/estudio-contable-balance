@@ -459,10 +459,22 @@ TEMA 3
 .links-interes__contenedor-tarjetas {
     display: flex;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     padding: 10px;
     padding-bottom: 15px;
+}
+
+.links-interes__contenedor-tarjetas::-webkit-scrollbar {
+    display: none;
+    /* height: 5px; 
+   width: 5px;
+   background: transparent;  */
+}
+
+.links-interes__contenedor-tarjetas::-webkit-scrollbar-thumb {
+    background: var(--color-vivos);
+    border-radius: 50px;
 }
 
 .links-interes__tarjeta-portada-contenedor {
@@ -499,20 +511,11 @@ TEMA 3
     transform: scale(1.1);
 }
 
-.links-interes__contenedor-tarjetas::-webkit-scrollbar{
-   height: 5px; /*si la barra es vertical le pongo width*/;
-   width: 5px;
-   background: transparent;  /*Es el fondo de la barra*/
-}
 
-.links-interes__contenedor-tarjetas::-webkit-scrollbar-thumb{
-  background: var(--color-vivos); /*color de la barra que movemos*/
-  border-radius: 50px;
-}
 
 
 .links-interes__link-tarjeta-descripcion {
-    text-decoration: none;
+    display: block;
     all: unset;
 }
 
@@ -766,6 +769,18 @@ TEMA 3
     .services__types {
         width: 70%;
 
+    }
+
+    .links-interes__contenedor-tarjetas::-webkit-scrollbar {
+        display: block;
+        height: 5px;
+        width: 5px;
+        background: transparent;
+    }
+
+    .links-interes__contenedor-tarjetas::-webkit-scrollbar-thumb {
+        background: var(--color-vivos);
+        border-radius: 50px;
     }
 
 }
