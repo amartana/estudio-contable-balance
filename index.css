@@ -455,6 +455,7 @@ TEMA 3
     overflow-y: hidden;
     padding: 10px;
     padding-bottom: 15px;
+    user-select: none;
 }
 
 .links-interes__contenedor-tarjetas::-webkit-scrollbar {
@@ -493,7 +494,7 @@ TEMA 3
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin: 0 5px;
+    margin: 0 10px;
     box-shadow: 2px 2px 2px grey;
     color: var(--color-principal);
 }

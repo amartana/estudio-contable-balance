@@ -16,6 +16,9 @@ const imagenes = {
         waOficial: 'https://iili.io/F7nGp8x.png'
     },
     avatar: 'https://iili.io/FRDeJgS.png',
-    fondoContacto: 'https://iili.io/FRtbp7n.md.jpg'
-
+    fondoContacto: 'https://iili.io/FRtbp7n.md.jpg',
+    links: {
+        vencimientos: 'https://iili.io/F0UVmlf.md.jpg',
+        intereses: 'https://iili.io/F0UVtPs.jpg'
+    }
 }
