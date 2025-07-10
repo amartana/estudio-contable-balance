@@ -47,7 +47,10 @@ TEMA 3
     opacity: 0.8;
     filter: drop-shadow(1px 1px 1px #111724);
 }
-
+.navbar__menu-icon svg{
+    transform: scale(1.2);
+    margin-left: 8px;
+}
 .navbar__menu-close {
     position: absolute;
     top: 0;
