@@ -43,9 +43,9 @@ TEMA 3
 
 .navbar__menu-icon {
     margin: 8px;
-    color: var(--color-principal-oscuro-transparencia);
+    color: var(--color-contraste);
     opacity: 0.8;
-    filter: drop-shadow(1px 1px 1px var(--color-contraste));
+    filter: drop-shadow(1px 1px 1px #111724);
 }
 
 .navbar__menu-close {
