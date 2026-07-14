@@ -47,10 +47,12 @@ TEMA 3
     opacity: 0.8;
     filter: drop-shadow(1px 1px 1px #111724);
 }
-.navbar__menu-icon svg{
+
+.navbar__menu-icon svg {
     transform: scale(1.2);
     margin-left: 8px;
 }
+
 .navbar__menu-close {
     position: absolute;
     top: 0;
@@ -97,8 +99,8 @@ TEMA 3
 }
 
 .portada {
-    height: 100vh;
-    height: 100svh;
+    /* height: 100vh;
+    height: 100svh; */
     background-color: var(--color-contraste)
 }
 
@@ -169,17 +171,22 @@ TEMA 3
 .portada__pie {
     display: flex;
     align-items: center;
-    height: 25%;
-
+    /* height: 25%; */
+    padding-top: 45px;
 }
 
 .portada__pie h1 {
     color: var(--color-principal);
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 28px;
+    /* font-size: 28px; */
     text-align: center;
     width: 100%;
+    font-size: 34px;
+    margin: auto;
+    line-height: 1.9;
+    font-weight: 300;
 }
+
 
 .who {
     /* min-height: 75vh; */
@@ -211,7 +218,7 @@ TEMA 3
     display: block;
     position: relative;
     left: 0;
-    height: 3px;
+    height: 2px;
     width: 60%;
     background-color: var(--color-vivos);
 }
@@ -224,10 +231,10 @@ TEMA 3
 }
 
 .who__contenido-parrafo {
-    font-size: 16px;
     text-align: center;
-    margin-bottom: 20px;
-
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
 .who__contenido-firma {
@@ -321,6 +328,16 @@ TEMA 3
     margin: 0 15px;
     margin-bottom: 35px;
     max-width: 270px;
+
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform .3s;
+}
+
+.services_carrousel-tarjeta:hover {
+    transform: scale(1.05);
 }
 
 .services_carrousel-tarjeta-contenedor-icon {
@@ -500,6 +517,7 @@ TEMA 3
     margin: 0 10px;
     box-shadow: 2px 2px 2px grey;
     color: var(--color-principal);
+    transition: transform .3s;
 }
 
 .links-interes__tarjeta:hover {
@@ -575,8 +593,21 @@ TEMA 3
     width: 80%;
     background-color: white;
     box-shadow: 2px 2px 2px 2px var(--color-principal-oscuro);
-    padding: 5px;
+    /* padding: 5px; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 12px;
+    transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0.5px 1px var(--color-principal-oscuro);
+    background-color: #f6f6ff
 }
 
 .contact-form input {
@@ -591,13 +622,21 @@ TEMA 3
 
 
 .button-enviar {
-    width: 80px;
-    height: 35px;
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
     margin-bottom: 30px;
     border-width: 1px;
     border-radius: 10px;
     color: beige;
     background-color: var(--color-principal-oscuro);
+    transition: transform 0.3s;
+}
+
+.button-enviar:hover {
+    transform: scale(1.1);
 }
 
 .logo-whatsapp {
@@ -685,14 +724,21 @@ TEMA 3
     -webkit-tap-highlight-color: transparent;
 }
 
+
 .icono-contacto-footer {
     width: 16px;
     margin: 6px 4px;
 }
 
+
+
 .footer_contacto {
     display: flex;
     align-items: center;
+}
+
+.no-link {
+    display: none;
 }
 
 .inactive-main {
@@ -751,11 +797,6 @@ TEMA 3
         text-shadow: 1px 1px 0px #ffffff;
     }
 
-    .portada__pie {
-        padding-top: 45px;
-    }
-
-
     .services__types {
         width: 70%;
 
@@ -786,5 +827,14 @@ TEMA 3
 
     html {
         background-color: #010125;
+    }
+
+    .email-link {
+        display: none
+    }
+
+    .no-link {
+        display: flex;
+        align-items: center;
     }
 }
