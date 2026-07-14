@@ -400,25 +400,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         <section id="contact" class="contact">
             <h1>Contactate con nosotros </h1>
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                 <input type="hidden" name="access_key" value="8571977f-1bb8-4621-aee1-22cc653eca90">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="tel" name="tel" placeholder="Celular" required>
-                <input type="email" name="email" placeholder="Tu email" required>
+                <input type="text" name="name" autocomplete="name" placeholder="Tu nombre" required>
+                <input type="tel" name="tel" autocomplete="tel" placeholder="Celular" required>
+                <input type="email" name="email" autocomplete="email" placeholder="Tu email" required>
                 <textarea name="message" placeholder="Escribinos tu consulta" required></textarea>
 
                 <!-- Honeypot Spam Protection -->

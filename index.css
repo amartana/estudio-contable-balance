@@ -212,7 +212,7 @@ TEMA 3
     position: relative;
     left: 0;
     height: 3px;
-    width: 60vw;
+    width: 60%;
     background-color: var(--color-vivos);
 }
 
@@ -566,12 +566,13 @@ TEMA 3
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .contact-form input,
 .contact-form textarea {
     margin: 10px;
-    width: 60vw;
+    width: 80%;
     background-color: white;
     box-shadow: 2px 2px 2px 2px var(--color-principal-oscuro);
     padding: 5px;
@@ -580,7 +581,6 @@ TEMA 3
 
 .contact-form input {
     height: 30px;
-
 }
 
 .contact-form textarea {
