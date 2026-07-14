@@ -176,13 +176,10 @@ TEMA 3
 .portada__pie h1 {
     color: var(--color-principal);
     font-family: "Noto Sans KR", sans-serif;
-    /* font-size: 28px; */
+    font-size: 28px;
     text-align: center;
     width: 100%;
-    font-size: 34px;
-    margin: auto;
-    line-height: 1.9;
-    font-weight: 300;
+    margin: 5px;
 }
 
 
@@ -794,6 +791,13 @@ TEMA 3
         padding-top: 45px;
     }
 
+    .portada__pie h1 {
+        margin: auto;
+        font-size: 34px;
+        line-height: 1.9;
+        font-weight: 300;
+    }
+
     .services__types {
         width: 70%;
 
@@ -831,18 +835,18 @@ TEMA 3
         transition: transform .3s;
     }
 
-}
 
-.services_carrousel-tarjeta:hover {
-    transform: scale(1.05);
-}
 
-.email-link {
-    display: none
-}
+    .services_carrousel-tarjeta:hover {
+        transform: scale(1.05);
+    }
 
-.no-link {
-    display: flex;
-    align-items: center;
-}
+    .email-link {
+        display: none
+    }
+
+    .no-link {
+        display: flex;
+        align-items: center;
+    }
 }
